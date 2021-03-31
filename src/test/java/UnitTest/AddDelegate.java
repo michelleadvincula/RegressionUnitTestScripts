@@ -1,10 +1,12 @@
 package UnitTest;
 
+import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -18,7 +20,14 @@ public class AddDelegate {
 	@BeforeTest
 	public void openBrowser() {
 			System.setProperty("webdriver.chrome.driver", driverPath);
-			driver = new ChromeDriver();
+		
+			ChromeOptions opt = new ChromeOptions();
+			opt.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+			opt.addArguments("--no-sandbox");
+			opt.addArguments("start-maximized");
+			opt.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+			opt.setExperimentalOption("useAutomationExtension", false);
+			driver = new ChromeDriver(opt);
 			driver.get(baseUrl);
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
