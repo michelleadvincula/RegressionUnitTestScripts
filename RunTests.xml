@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ExecuteTests">
+	<test name="Test Add Delegate">
+		<classes>
+			<class name="UnitTest.AddDelegate" />
+		</classes>
+	</test>
+	<test name = "Test Submit All Review - YES">
+	<classes>
+	<class name="UnitTest.SubmitNewReviewAllYes" />
+	</classes>
+	</test>
+</suite>
