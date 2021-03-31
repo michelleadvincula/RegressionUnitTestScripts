@@ -11,6 +11,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class AddDelegate {
 	//DEV Environment
 	public String baseUrl = "https://apps.powerapps.com/play/e7913a8e-0481-4d5d-ba5c-39d42c620097?tenantId=62551275-fac1-4caf-a2b6-2d9c7efcafba&source=portal&screenColor=rgba(1%2C%20131%2C%20134%2C%201)";
@@ -27,6 +29,7 @@ public class AddDelegate {
 			opt.addArguments("start-maximized");
 			opt.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 			opt.setExperimentalOption("useAutomationExtension", false);
+			 WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(opt);
 			driver.get(baseUrl);
 			driver.manage().window().maximize();

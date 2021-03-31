@@ -16,6 +16,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class SubmitNewReviewAllYes {
 	//Dev environment
@@ -32,6 +34,7 @@ public class SubmitNewReviewAllYes {
 			opt.addArguments("start-maximized");
 			opt.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 			opt.setExperimentalOption("useAutomationExtension", false);
+			 WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(opt);
 			driver.get(baseUrl);
 			driver.manage().window().maximize();
