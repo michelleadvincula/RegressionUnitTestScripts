@@ -1,4 +1,6 @@
 UnitTest\SubmitNewReviewAllYes.class
 UnitTest\AddDelegate.class
+UnitTest\SubmitNewReviewAllNo.class
 UnitTest\CommonFunctions.class
 UnitTest\SwitchCurrentWindow.class
+UnitTest\GetCurrentMonthYear.class
