@@ -1,60 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-04T22:02:18 CST" name="Default suite" finished-at="2021-05-04T22:02:30 CST" duration-ms="12103">
+  <suite started-at="2021-07-12T23:04:32 CST" name="Default suite" finished-at="2021-07-12T23:04:48 CST" duration-ms="15192">
     <groups>
     </groups>
-    <test started-at="2021-05-04T22:02:18 CST" name="Default test" finished-at="2021-05-04T22:02:30 CST" duration-ms="12103">
-      <class name="UnitTest.SubmitNewReviewAllYes">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:UnitTest.SubmitNewReviewAllYes@703580bf]" started-at="2021-05-04T22:02:18 CST" name="openBrowser" finished-at="2021-05-04T22:02:22 CST" duration-ms="4045" status="PASS">
+    <test started-at="2021-07-12T23:04:32 CST" name="Default test" finished-at="2021-07-12T23:04:48 CST" duration-ms="15192">
+      <class name="UnitTest.TestEmail">
+        <test-method signature="TestOutlookEmail()[pri:0, instance:UnitTest.TestEmail@2ea227af]" started-at="2021-07-12T23:04:32 CST" name="TestOutlookEmail" finished-at="2021-07-12T23:04:48 CST" duration-ms="15167" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="TestSubmitNewReviewAllYes()[pri:2, instance:UnitTest.SubmitNewReviewAllYes@703580bf]" started-at="2021-05-04T22:02:22 CST" name="TestSubmitNewReviewAllYes" finished-at="2021-05-04T22:02:30 CST" duration-ms="8028" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
-at UnitTest.CommonFunctions.SendKeys(CommonFunctions.java:95)
-at UnitTest.SubmitNewReviewAllYes.TestSubmitNewReviewAllYes(SubmitNewReviewAllYes.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestSubmitNewReviewAllYes -->
-      </class> <!-- UnitTest.SubmitNewReviewAllYes -->
+        </test-method> <!-- TestOutlookEmail -->
+      </class> <!-- UnitTest.TestEmail -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

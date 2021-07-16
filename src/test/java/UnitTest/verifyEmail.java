@@ -27,7 +27,7 @@ public class verifyEmail {
 
 		Session session = Session.getDefaultInstance(props, null);
 		Store store = session.getStore("imaps");
-		store.connect("outlook.office365.com", "alex.franklin@ccbmidev.onmicrosoft.com", "Nubu7830");
+		store.connect("outlook.office365.com", "akash@ccbmidev.onmicrosoft.com", "Nuno0506");
 
 		Folder folder = store.getFolder("Inbox");
 		folder.open(Folder.READ_WRITE);
@@ -91,7 +91,7 @@ public class verifyEmail {
 
 	    System.out.println("**************************************************");
 
-	    System.out.println(bufferEmailContentEncoded);
+	    //System.out.println(bufferEmailContentEncoded);
 
 	    System.out.println("**************************************************");
 

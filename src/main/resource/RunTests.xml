@@ -6,8 +6,18 @@
 		</classes>
 	</test>
 	<test name = "Test Submit All Review - YES">
-	<classes>
-	<class name="UnitTest.SubmitNewReviewAllYes" />
-	</classes>
+		<classes>
+		<class name="UnitTest.SubmitNewReviewAllYes" />
+		</classes>
+	</test>
+	<test name="Test Submit All Review - NO">
+		<classes>
+			<class name="UnitTest.SubmitNewReviewAllNo" />
+		</classes>
+	</test>
+	<test name="Test BR PDF Email">
+		<classes>
+			<class name="UnitTest.TestEmail" />
+		</classes>
 	</test>
 </suite>
